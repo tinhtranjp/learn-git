@@ -18,6 +18,15 @@ git restore <file>
 // Muốn quay về commit đó:
 git switch -c test 8d3e2a1
 
+// Nhìn vào đây là biết ngay:
+git log --oneline
+git log --oneline --graph --decorate --all
+
+Đang đứng ở branch nào (HEAD -> feature/payment).
+main đang ở commit nào.
+Các branch đã tách và merge ra sao.
+
+Đây là lệnh mà rất nhiều lập trình viên mở ra đầu tiên khi muốn hiểu lịch sử của một dự án.
 
 
 // lấy file nào từ đâu và ghi đè ở branch hiện tại
