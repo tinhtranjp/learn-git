@@ -1,0 +1,15 @@
+// chuyển nhánh và merge
+git switch main
+git pull
+git merge test2
+git push
+
+
+git status        # Xem mình đã sửa gì
+git diff          # (Nếu muốn) Xem chính xác sửa những dòng nào
+git add .
+git commit -m "feat: ..."
+git push
+
+// Nếu phát hiện file sửa nhầm:
+git restore <file>
