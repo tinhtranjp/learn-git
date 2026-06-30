@@ -13,3 +13,30 @@ git push
 
 // Nếu phát hiện file sửa nhầm:
 git restore <file>
+
+
+// Muốn quay về commit đó:
+git switch -c test 8d3e2a1
+
+
+
+// lấy file nào từ đâu và ghi đè ở branch hiện tại
+main:
+  file.txt = "Hello Main"
+
+test2:
+  file.txt = "Hello Test2"
+
+Anh đang ở test2.
+
+Sau lệnh:
+git restore --source main file.txt
+test2:
+  file.txt = "Hello Main"
+
+👉 Nhưng anh vẫn đang ở test2
+
+🧠 Hiểu theo cách dễ nhất
+
+Git không “chuyển file sang branch khác”
+mà là “lấy bản snapshot từ branch khác và đè lên file hiện tại”
